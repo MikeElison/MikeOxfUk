@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	<title>Hexadecimal Whole-Palette</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="d-flex justify-content-center align-items-center">
+		<h1 class="text-center display-4"><span id="hours">Time: 00 : </span><span id="minutes">00 : </span><span id="seconds">01</span></h1>
+	</div>
+
+	<div class="d-flex justify-content-center align-items-center">
+		<h1 class="text-center display-4 d2"><span id="r1">Background Colour: #</span><span id="r2"></span><span id="g1"></span><span id="g2"></span><span id="b1"></span><span id="b2"></span></h1>
+	</div>
+
+	<div class="d-flex justify-content-center align-items-center">
+		<h1 class="text-center display-4"><span id="r1t">Text Colour #</span><span id="r2t"></span><span id="g1t">.</span><span id="g2t"></span><span id="b1t"></span><span id="b2t"></span></h1>
+	</div>
+
+	<div class="d-flex justify-content-center align-items-start">
+	<p id="message"><em>The colour of the background changes as follows: the red constituent changes from 00 to FF between 0 and 23 hours, and the green and blue ones change from 00 to FF between 0 and 59 minutes and seconds, respectively.<br><br>The constituents of the colour of the text change, at the same periods of time, from FF to 00, making the colour of the text, effectively, the opposite of the one of the background. Exception -- the period of time between 12:27 and 12:32, when seconds show between 20 and 40. At those times, the colours are barely distinguishable; so, I have made the colour of the whole text orange. That orange mode can be easily "commented out" in the .js file.</em></p>
+	</div>
+
+	
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
